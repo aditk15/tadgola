@@ -90,11 +90,6 @@ export default function Milestones() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block text-sm uppercase tracking-widest text-primary font-bold mb-2 relative">
-            Our Impact
-            <div className="absolute w-full h-1 bg-primary/30 bottom-0 left-0 transform -skew-x-12"></div>
-          </span>
-
           <h2 className="font-bold text-4xl md:text-5xl text-primary mb-6 relative inline-block">
             <span className="relative z-10">Our Milestones</span>
             <span className="absolute -bottom-2 left-0 w-full h-4 bg-accent/30 -skew-x-3"></span>

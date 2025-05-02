@@ -1,41 +1,45 @@
 "use client"
 
-import { useEffect, useRef } from "react"
 import Image from "next/image"
+import { useEffect } from "react"
 
 export default function ImageCarousel() {
-  const column1Ref = useRef<HTMLDivElement>(null)
-  const column2Ref = useRef<HTMLDivElement>(null)
-
-  // Sample image data - replace with your actual images
   const images1 = [
-    "/placeholder.svg?height=400&width=300",
-    "/placeholder.svg?height=400&width=300",
-    "/placeholder.svg?height=400&width=300",
-    "/placeholder.svg?height=400&width=300",
+    "/carousel/1.webp",
+    "/carousel/2.webp",
+    "/carousel/3.webp",
+    "/carousel/4.webp",
+    "/carousel/5.webp",
+    "/carousel/6.webp",
+    "/carousel/7.webp",
+    "/carousel/8.webp",
+    "/carousel/9.webp",
+    "/carousel/10.webp",
+    "/carousel/11.webp",
+    "/carousel/12.webp",
+    "/carousel/13.webp",
+    "/carousel/14.webp",
   ]
 
   const images2 = [
-    "/placeholder.svg?height=400&width=300",
-    "/placeholder.svg?height=400&width=300",
-    "/placeholder.svg?height=400&width=300",
-    "/placeholder.svg?height=400&width=300",
+    "/carousel/15.webp",
+    "/carousel/16.webp",
+    "/carousel/17.webp",
+    "/carousel/18.webp",
+    "/carousel/19.webp",
+    "/carousel/20.webp",
+    "/carousel/21.webp",
+    "/carousel/22.webp",
+    "/carousel/23.webp",
+    "/carousel/24.webp",
+    "/carousel/25.webp",
+    "/carousel/26.webp",
+    "/carousel/27.webp",
+    "/carousel/28.webp",
   ]
 
-  useEffect(() => {
-    const setupScrolling = () => {
-      if (column1Ref.current && column2Ref.current) {
-        // Clone the content for seamless looping
-        const column1Content = column1Ref.current.innerHTML
-        const column2Content = column2Ref.current.innerHTML
-
-        column1Ref.current.innerHTML = column1Content + column1Content
-        column2Ref.current.innerHTML = column2Content + column2Content
-      }
-    }
-
-    setupScrolling()
-  }, [])
+  const duplicatedImages1 = [...images1, ...images1];
+  const duplicatedImages2 = [...images2, ...images2];
 
   return (
     <section className="py-16 overflow-hidden">
@@ -44,37 +48,51 @@ export default function ImageCarousel() {
       </div>
 
       <div className="grid grid-cols-2 gap-4 max-w-4xl mx-auto">
-        <div className="overflow-hidden h-[600px]">
-          <div ref={column1Ref} className="vertical-scroll">
-            {images1.map((src, index) => (
+        <div className="overflow-hidden h-[600px] border border-gray-200">
+          <div className="vertical-scroll h-full">
+            {duplicatedImages1.map((src, index) => (
               <div key={`col1-${index}`} className="mb-4">
                 <Image
-                  src={src || "/placeholder.svg"}
+                  src={src}
                   alt={`Tadgola event ${index + 1}`}
                   width={300}
                   height={400}
-                  className="rounded-lg shadow-md"
+                  priority={index < 3}
+                  className="rounded-lg shadow-md h-auto w-full"
                 />
               </div>
             ))}
           </div>
         </div>
 
-        <div className="overflow-hidden h-[600px]">
-          <div ref={column2Ref} className="vertical-scroll-reverse">
-            {images2.map((src, index) => (
+        <div className="overflow-hidden h-[600px] border border-gray-200">
+          <div className="vertical-scroll-reverse h-full">
+            {duplicatedImages2.map((src, index) => (
               <div key={`col2-${index}`} className="mb-4">
                 <Image
-                  src={src || "/placeholder.svg"}
-                  alt={`Tadgola event ${index + 5}`}
+                  src={src}
+                  alt={`Tadgola event ${index + 15}`}
                   width={300}
                   height={400}
-                  className="rounded-lg shadow-md"
+                  priority={index < 3}
+                  className="rounded-lg shadow-md h-auto w-full"
                 />
               </div>
             ))}
           </div>
         </div>
+      </div>
+      
+      {/* Test image to verify image loading works */}
+      <div className="mt-8 text-center">
+        <Image 
+          src="/carousel/1.webp"
+          alt="Test image"
+          width={200}
+          height={200}
+          priority
+          className="inline-block rounded-lg border-2 border-red-500"
+        />
       </div>
     </section>
   )

@@ -79,24 +79,17 @@ export default function LandingSection() {
             animate={isVisible ? "visible" : "hidden"}
             variants={containerVariants}
           >
-            {/* <motion.div variants={itemVariants} className="relative inline-block mb-2">
-              <span className="text-sm uppercase tracking-widest text-accent font-bold">But, what is improv?</span>
-              <div className="absolute w-full h-1 bg-accent bottom-0 left-0 transform -skew-x-12"></div>
-            </motion.div> */}
-
             <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-bold text-primary mb-6 relative">
-              {/* <span className="relative z-10">What is</span> */}
               <span className="block relative">
-                <span className="relative z-10">But, what is improv?</span>
+                <span className="relative z-10">BUT, WHAT IS IMPROV?</span>
                 <span className="absolute -bottom-2 left-0 w-full h-4 bg-accent/30 -skew-x-3"></span>
               </span>
             </motion.h2>
 
-            <motion.p variants={itemVariants} className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-6">
-              Tadgola is an <span className="text-primary font-bold">improv company</span> dedicated to bringing the joy
-              of
+            <motion.p variants={itemVariants} className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-4">
+              <span className="text-primary font-medium">IMPROV IS SHORT FOR IMPROVISATION</span> — which simply means 
               <span className="relative inline-block mx-1">
-                spontaneous
+                coming up with things on the spot.
                 <svg
                   className="absolute -bottom-1 left-0 w-full"
                   height="6"
@@ -106,17 +99,31 @@ export default function LandingSection() {
                   <path d="M0,3 C20,1 40,6 60,3 C80,0 100,4 100,3" stroke="#F2B10F" strokeWidth="3" fill="none" />
                 </svg>
               </span>
-              creativity to everyone. We believe that improvisation isn't just for the stage—it's a mindset that
-              enhances creativity, builds confidence, and brings people together.
             </motion.p>
 
-            <motion.p variants={itemVariants} className="text-lg md:text-xl text-foreground/80 leading-relaxed">
-              Through our shows, workshops, and community events, we create spaces where people can discover the magic
-              of saying
-              <span className="font-bold text-accent mx-1">"Yes, and..."</span>
-              to life's unexpected moments. Join us on this journey of playfulness, connection, and authentic
-              expression.
+            <motion.p variants={itemVariants} className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-6">
+              So, want to try something new? <span className="text-accent font-bold">Improv is the best new thing to try</span>
             </motion.p>
+
+            <motion.div variants={itemVariants} className="mb-8">
+              <h3 className="text-xl font-bold mb-3 text-primary">Everybody is an improviser!</h3>
+              
+              <p className="text-lg font-medium mb-2">You've improvised everytime you have:</p>
+              <ul className="space-y-2 ml-6">
+                <li className="flex items-start">
+                  <span className="text-accent font-bold mr-2">•</span>
+                  <span>Made up an excuse for being late</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-accent font-bold mr-2">•</span>
+                  <span>Asked for a sick leave when you weren't actually sick</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-accent font-bold mr-2">•</span>
+                  <span>Left the office early to go for a concert</span>
+                </li>
+              </ul>
+            </motion.div>
 
             <motion.div variants={itemVariants} className="mt-8">
               <a
@@ -126,6 +133,7 @@ export default function LandingSection() {
                 Discover Our World
               </a>
             </motion.div>
+
           </motion.div>
 
           {/* Right side: Image Carousel */}
