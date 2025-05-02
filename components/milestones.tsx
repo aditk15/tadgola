@@ -67,10 +67,9 @@ function Counter({ end, label, duration = 2000, suffix = "", delay = 0 }: Counte
 
 export default function Milestones() {
   const milestones = [
-    { value: 150, label: "Shows Conducted", suffix: "+", delay: 0 },
-    { value: 12, label: "Cities Ventured", suffix: "", delay: 1 },
-    { value: 5000, label: "Happy Participants", suffix: "+", delay: 2 },
-    { value: 25, label: "Corporate Workshops", suffix: "+", delay: 3 },
+    { value: 30, label: "Shows Conducted", suffix: "+", delay: 0 },
+    { value: 3, label: "Cities Ventured", suffix: "", delay: 1 },
+    { value: 500, label: "Happy Participants", suffix: "+", delay: 2 },
   ]
 
   const sectionRef = useRef(null)
@@ -101,7 +100,7 @@ export default function Milestones() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-5xl mx-auto">
           {milestones.map((milestone, index) => (
             <Counter
               key={index}

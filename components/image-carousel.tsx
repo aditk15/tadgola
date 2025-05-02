@@ -82,18 +82,6 @@ export default function ImageCarousel() {
           </div>
         </div>
       </div>
-      
-      {/* Test image to verify image loading works */}
-      <div className="mt-8 text-center">
-        <Image 
-          src="/carousel/1.webp"
-          alt="Test image"
-          width={200}
-          height={200}
-          priority
-          className="inline-block rounded-lg border-2 border-red-500"
-        />
-      </div>
     </section>
   )
 }

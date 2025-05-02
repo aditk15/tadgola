@@ -21,13 +21,17 @@ function FaqItem({ question, answer }: FaqItemProps) {
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
       >
-        <h3 className="text-lg font-medium">{question}</h3>
+        <h3 className="text-xl font-medium">
+          {question}
+        </h3>
         <ChevronDown
           className={cn("h-5 w-5 text-primary transition-transform duration-200", isOpen && "transform rotate-180")}
         />
       </button>
       <div className={cn("overflow-hidden transition-all duration-300", isOpen ? "max-h-96 pb-4" : "max-h-0")}>
-        <p className="text-foreground/80">{answer}</p>
+        <p className="text-foreground/80 italic">
+          {answer}
+        </p>
       </div>
     </div>
   )
@@ -36,34 +40,39 @@ function FaqItem({ question, answer }: FaqItemProps) {
 export default function FaqsPage() {
   const faqs = [
     {
-      question: "What exactly is improv?",
+      question: "Can anyone do improv?",
       answer:
-        "Improvisation, or improv, is a form of live theater where the plot, characters, and dialogue are created in the moment. Unlike scripted performances, improv relies on spontaneity, creativity, and collaboration among performers. It's both an art form and a skill that can be developed through practice.",
+        "Yes! Improv is for everyone—no experience needed. It’s a fun, creative way to build confidence, communication, and teamwork skills.",
     },
     {
-      question: "Do I need experience to participate in your events?",
+      question: "Do I need to be experienced to join?",
       answer:
-        "Not at all! Our JAMs and workshops are designed for all experience levels, including complete beginners. We create a supportive environment where everyone can feel comfortable trying improv for the first time. Our only requirement is an open mind and willingness to play.",
+        "No experience needed! Our improv sessions are beginner-friendly and open to everyone. Whether you're new to improv or just curious, we make it easy and fun to get started.",
     },
     {
-      question: "How can I book Tadgola for a corporate event?",
+      question: "I am not an actor. Is improv for me too?",
       answer:
-        "You can book us for corporate events by reaching out through our 'Get in Touch' page. We offer customized workshops and performances tailored to your company's goals, whether that's team building, communication skills, or simply providing entertainment for your event.",
+        "Yes! Improv isn’t just for actors—it’s for anyone who wants to build confidence, think creatively, and have fun.",
     },
     {
-      question: "What should I expect at my first improv JAM?",
+      question: "Can an introvert also take part in improv jams?",
       answer:
-        "At your first JAM, you can expect a warm welcome, fun warm-up games, and gradually more involved improv exercises. Our facilitators guide the session, ensuring everyone feels included. You can participate as much or as little as you're comfortable with—many people start by watching and join in when they feel ready.",
+        "Yes! Introverts can thrive in improv. It's a fun activity and great to foster social skills—no loud personality needed.",
     },
     {
-      question: "How can improv benefit me personally or professionally?",
+      question: "What are the prerequisites to attend a Tadgola improv jam?",
       answer:
-        "Improv offers numerous benefits! Personally, it can boost confidence, enhance creativity, and reduce anxiety about public speaking. Professionally, improv improves communication skills, adaptability, team collaboration, and the ability to think on your feet. Many business leaders and professionals use improv techniques to enhance their leadership skills and foster innovation in their organizations.",
+        "None.\nThere's no need to have any experience in improv!\nNeither do you have to be extroverted – That's what WE are here for!\nIt's awkward, hilarious, occasionally profound—and never the same twice.\nAll you need to do is come with an open mind and jump into action.\nAnd remember to laugh your hearts out!",
     },
     {
-      question: "Are your shows family-friendly?",
+      question: "What is the rule of ‘Yes, and..’? I have heard it somewhere.",
       answer:
-        "Yes, most of our regular shows are family-friendly and appropriate for all ages. We occasionally host special adult-oriented shows, but these are clearly marked in our event descriptions. If you have specific concerns about content, feel free to contact us before attending.",
+        '"Yes, And" is a fundamental improv rule where you accept what your scene partner offers ("Yes") and then build on it ("And"). This keeps the scene flowing and encourages creativity and collaboration.',
+    },
+    {
+      question: "Where do you come up with such great prompts?",
+      answer:
+        "Well, that's a secret but you could see it for yourself in our sessions.",
     },
   ]
 

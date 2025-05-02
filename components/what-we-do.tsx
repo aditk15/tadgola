@@ -5,14 +5,13 @@ import { cn } from "@/lib/utils"
 import { motion, useInView } from "framer-motion"
 
 interface ActivityCardProps {
-  title: string
   description: string
   icon: string
   bgColor?: string
   delay?: number
 }
 
-function ActivityCard({ title, description, icon, bgColor = "bg-accent", delay = 0 }: ActivityCardProps) {
+function ActivityCard({ description, icon, bgColor = "bg-accent", delay = 0 }: ActivityCardProps) {
   const [isHovered, setIsHovered] = useState(false)
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
@@ -30,21 +29,19 @@ function ActivityCard({ title, description, icon, bgColor = "bg-accent", delay =
       <div className={cn("w-full h-full flex items-center justify-center relative", bgColor)}>
         <div className="absolute inset-0 bg-dots opacity-10"></div>
         <span
-          className="text-6xl transform transition-transform duration-300"
+          className="font-display text-4xl md:text-5xl font-bold transform transition-transform duration-300 text-white/90 tracking-tight text-center w-full px-6"
           style={{
             transform: isHovered ? "scale(0.8) translateY(-20px)" : "scale(1)",
           }}
         >
           {icon}
         </span>
-
         {/* Decorative elements */}
         <div className="absolute top-4 left-4 w-8 h-8 rounded-full bg-white/10"></div>
         <div className="absolute bottom-4 right-4 w-6 h-6 rounded-full bg-white/10"></div>
       </div>
       <div className="card-content p-6 text-white">
-        <h3 className="text-2xl font-bold mb-2">{title}</h3>
-        <p className="text-white/90">{description}</p>
+      <p className="font-sans text-white/90 leading-relaxed text-sm md:text-base">{description}</p>
       </div>
     </motion.div>
   )
@@ -53,29 +50,35 @@ function ActivityCard({ title, description, icon, bgColor = "bg-accent", delay =
 export default function WhatWeDo() {
   const activities = [
     {
-      title: "JAMs",
-      description: "Interactive improv sessions where everyone can participate and learn the basics of improvisation.",
-      icon: "🎭",
+      description: "Fun, high-energy sessions with classic and new improv games. Laugh, let loose, and meet fellow improv lovers. Perfect for beginners and pros alike.",
+      icon: "Improv JAMs",
       bgColor: "bg-gradient-to-br from-primary to-primary/80",
     },
     {
-      title: "Shows",
-      description: "Professional improv performances that will leave you laughing and inspired.",
-      icon: "🎪",
+      description: "Break the routine with our fun, interactive corporate improv sessions. Boost team bonding, communication, and laughter — no scripts, just pure connection.",
+      icon: "Corporate Shows",
       bgColor: "bg-gradient-to-br from-accent to-accent/80",
     },
     {
-      title: "Training",
-      description: "Workshops and courses to develop your improv skills, confidence, and creativity.",
-      icon: "🎓",
+      description: "Sharpen your instincts with our dynamic improv training for actors. Build on-set spontaneity, stage presence, and emotional range through play and performance.",
+      icon: "Actor Training",
       bgColor: "bg-gradient-to-br from-primary/90 to-accent/80",
     },
     {
-      title: "Corporate Events",
-      description: "Team-building and creativity workshops tailored for businesses and organizations.",
-      icon: "💼",
+      description: "Enhance team communication, collaboration, and problem-solving through our improv-based corporate workshops. Designed for professionals, these interactive sessions improve adaptability, active listening, and creative thinking in the workplace.",
+      icon: "Corporate Training",
       bgColor: "bg-gradient-to-br from-accent/90 to-primary/80",
     },
+    {
+      description: "Liven up your event with our interactive improv performances. Perfect for birthdays, reunions, and private parties — spontaneous humor, audience engagement, and unforgettable memories.",
+      icon: "Party Gigs",
+      bgColor: "bg-gradient-to-br from-accent/90 to-primary/80",
+    },
+    {
+      description: "Enhance creativity, teamwork, and communication with our improv workshops for schools and summer camps. Designed to build confidence and foster collaboration through engaging, interactive activities for youth.",
+      icon: "Workshops for Schools & Camps",
+      bgColor: "bg-gradient-to-br from-accent/90 to-primary/80",
+    }
   ]
 
   const sectionRef = useRef(null)
@@ -85,7 +88,6 @@ export default function WhatWeDo() {
     <section id="what-we-do" className="py-24 relative overflow-hidden skewed-top skewed-bottom" ref={sectionRef}>
       <div className="absolute inset-0 bg-muted"></div>
 
-      {/* Decorative elements */}
       <div className="absolute top-1/4 left-10 w-20 h-20 rounded-full bg-primary/10 blob-small"></div>
       <div className="absolute bottom-1/3 right-10 w-32 h-32 rounded-full bg-accent/10 blob"></div>
 
@@ -107,11 +109,10 @@ export default function WhatWeDo() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {activities.map((activity, index) => (
             <ActivityCard
               key={index}
-              title={activity.title}
               description={activity.description}
               icon={activity.icon}
               bgColor={activity.bgColor}
