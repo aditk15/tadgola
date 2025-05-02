@@ -3,14 +3,14 @@ import { Phone, Linkedin, Instagram, MessageSquare, Mail } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-white py-8 relative overflow-hidden">
+    <footer className="bg-primary text-white py-4 relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-full h-12 bg-accent/20 transform -skew-y-3"></div>
       <div className="absolute inset-0 bg-dots opacity-10"></div>
       <div className="circle-decoration w-64 h-64 -bottom-32 -left-32 opacity-10"></div>
       <div className="circle-decoration w-48 h-48 top-10 right-10 opacity-10"></div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
             <h2 className="text-3xl font-bold mb-6 relative inline-block">
@@ -18,8 +18,7 @@ export default function Footer() {
               <span className="absolute -bottom-2 left-0 w-full h-2 bg-accent"></span>
             </h2>
             <p className="max-w-md text-white/80 mb-8">
-              Bringing the joy of improvisation to everyone. Join us on this creative journey where every moment is an
-              opportunity for spontaneous magic!
+            Tadgola brings the magic of improv to everybody! From corporate teams to social mixers, from actor training to kids workshops, we craft tailored experiences that energize and inspire every kind of group. Let's create together!
             </p>
 
             <div className="flex space-x-4">
@@ -47,7 +46,7 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-
+          
           <div>
             <h3 className="text-xl font-semibold mb-6 relative inline-block">
               <span>Quick Links</span>
@@ -101,10 +100,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/20 text-center">
-          <p className="text-white/70 text-xs mt-1">Tadgola™ This property belongs to FullHouse Ventures. All rights reserved.</p>
-          <p className="text-white/50 text-xs mt-1"></p>
-          <p className="text-white/50 text-xs mt-1">Designed and Developed by Adit Khandelwal</p>
+        <div className="mt-6 pt-4 border-t border-white/20 text-center">
+          <p className="text-white/70 text-xs mt-1">© 2025 Tadgola. All rights reserved.</p>
+          <p className="text-white/70 text-xs mt-1">Tadgola is a registered trademark and the exclusive property of FullHouse Ventures.</p>
+          <p className="text-white/70 text-xs mt-1">FullHouse Ventures is a registered partnership firm under the Indian Partnership Act, 1932.</p>
+          <p className="text-white/50 text-sm mt-8">Designed and Developed by Adit Khandelwal</p>
         </div>
       </div>
     </footer>
