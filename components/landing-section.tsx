@@ -9,19 +9,38 @@ export default function LandingSection() {
   const column2Ref = useRef<HTMLDivElement>(null)
   const [isVisible, setIsVisible] = useState(false)
 
-  // Sample image data - replace with your actual images
   const images1 = [
-    "/placeholder.svg?height=400&width=300",
-    "/placeholder.svg?height=400&width=300",
-    "/placeholder.svg?height=400&width=300",
-    "/placeholder.svg?height=400&width=300",
+    "/carousel/1.webp",
+    "/carousel/2.webp",
+    "/carousel/3.webp",
+    "/carousel/4.webp",
+    "/carousel/5.webp",
+    "/carousel/6.webp",
+    "/carousel/7.webp",
+    "/carousel/8.webp",
+    "/carousel/9.webp",
+    "/carousel/10.webp",
+    "/carousel/11.webp",
+    "/carousel/12.webp",
+    "/carousel/13.webp",
+    "/carousel/14.webp",
   ]
 
   const images2 = [
-    "/placeholder.svg?height=400&width=300",
-    "/placeholder.svg?height=400&width=300",
-    "/placeholder.svg?height=400&width=300",
-    "/placeholder.svg?height=400&width=300",
+    "/carousel/15.webp",
+    "/carousel/16.webp",
+    "/carousel/17.webp",
+    "/carousel/18.webp",
+    "/carousel/19.webp",
+    "/carousel/20.webp",
+    "/carousel/21.webp",
+    "/carousel/22.webp",
+    "/carousel/23.webp",
+    "/carousel/24.webp",
+    "/carousel/25.webp",
+    "/carousel/26.webp",
+    "/carousel/27.webp",
+    "/carousel/28.webp",
   ]
 
   useEffect(() => {
@@ -87,7 +106,7 @@ export default function LandingSection() {
             </motion.h2>
 
             <motion.p variants={itemVariants} className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-4">
-              <span className="text-primary font-medium">IMPROV IS SHORT FOR IMPROVISATION</span> — which simply means 
+              <span className="text-primary font-medium">IMPROV IS SHORT FOR IMPROVISATION</span> — which simply means
               <span className="relative inline-block mx-1">
                 coming up with things on the spot.
                 <svg
@@ -102,12 +121,13 @@ export default function LandingSection() {
             </motion.p>
 
             <motion.p variants={itemVariants} className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-6">
-              So, want to try something new? <span className="text-accent font-bold">Improv is the best new thing to try</span>
+              So, want to try something new?{" "}
+              <span className="text-accent font-bold">Improv is the best new thing to try</span>
             </motion.p>
 
             <motion.div variants={itemVariants} className="mb-8">
               <h3 className="text-xl font-bold mb-3 text-primary">Everybody is an improviser!</h3>
-              
+
               <p className="text-lg font-medium mb-2">You've improvised everytime you have:</p>
               <ul className="space-y-2 ml-6">
                 <li className="flex items-start">
@@ -133,7 +153,6 @@ export default function LandingSection() {
                 Discover Our World
               </a>
             </motion.div>
-
           </motion.div>
 
           {/* Right side: Image Carousel */}

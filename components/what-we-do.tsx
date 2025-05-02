@@ -99,7 +99,7 @@ export default function WhatWeDo() {
           className="text-center mb-16"
         >
           <h2 className="font-bold text-4xl md:text-5xl text-primary mb-6 relative inline-block">
-            <span className="relative z-10">What We Do at Tadgola</span>
+            <span className="relative z-10">WHAT WE DO AT TADGOLA</span>
             <span className="absolute -bottom-2 left-0 w-full h-4 bg-accent/30 -skew-x-3"></span>
           </h2>
 

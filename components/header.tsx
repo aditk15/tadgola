@@ -25,6 +25,7 @@ export default function Header() {
 
   const navLinks = [
     { href: "/about", label: "About Us" },
+    { href: "/blog", label: "Blog" },
     { href: "/faqs", label: "FAQs" },
     { href: "/prompt-generator", label: "Improv Prompt Generator" },
     { href: "/contact", label: "Get in Touch" },
@@ -32,27 +33,27 @@ export default function Header() {
 
   return (
     <header
-  className={cn(
-    "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
-    scrolled ? "bg-primary shadow-lg py-0" : "bg-primary py-0",
-  )}
->
-  <div className="container mx-auto px-4">
-    <div className="flex justify-between items-center relative">
-      {/* Decorative elements */}
-      <div className="absolute -bottom-2 left-1/4 w-24 h-1 bg-accent rounded-full opacity-50 transform -rotate-3"></div>
-      <div className="absolute -top-2 right-1/3 w-16 h-1 bg-accent rounded-full opacity-50 transform rotate-6"></div>
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
+        scrolled ? "bg-primary shadow-lg py-0" : "bg-primary py-0",
+      )}
+    >
+      <div className="container mx-auto px-4">
+        <div className="flex justify-between items-center relative">
+          {/* Decorative elements */}
+          <div className="absolute -bottom-2 left-1/4 w-24 h-1 bg-accent rounded-full opacity-50 transform -rotate-3"></div>
+          <div className="absolute -top-2 right-1/3 w-16 h-1 bg-accent rounded-full opacity-50 transform rotate-6"></div>
 
-      <Link href="/" className="z-50 relative group">
-  <div className="absolute -inset-2 bg-accent/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-  <Image
-    src="/logo.svg?height=1800&width=750" 
-    alt="Tadgola logo"
-    width={500}
-    height={180}
-    className="h-20 w-auto relative py-0" 
-  />
-</Link>
+          <Link href="/" className="z-50 relative group">
+            <div className="absolute -inset-2 bg-accent/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <Image
+              src="/logo.svg?height=1800&width=750"
+              alt="Tadgola logo"
+              width={500}
+              height={180}
+              className="h-20 w-auto relative py-0"
+            />
+          </Link>
 
           {/* Desktop Navigation - Only visible on lg screens and above */}
           <nav className="hidden lg:flex items-center space-x-8">

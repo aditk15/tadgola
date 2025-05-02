@@ -102,11 +102,11 @@
 
 /* Animated elements */
 .vertical-scroll {
-  animation: scrollVertical 30s linear infinite;
+  animation: scrollVertical 60s linear infinite;
 }
 
 .vertical-scroll-reverse {
-  animation: scrollVertical 30s linear infinite reverse;
+  animation: scrollVertical 60s linear infinite reverse;
 }
 
 @keyframes scrollVertical {
