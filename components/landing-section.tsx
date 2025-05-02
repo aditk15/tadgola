@@ -79,15 +79,15 @@ export default function LandingSection() {
             animate={isVisible ? "visible" : "hidden"}
             variants={containerVariants}
           >
-            <motion.div variants={itemVariants} className="relative inline-block mb-2">
-              <span className="text-sm uppercase tracking-widest text-accent font-bold">Discover</span>
+            {/* <motion.div variants={itemVariants} className="relative inline-block mb-2">
+              <span className="text-sm uppercase tracking-widest text-accent font-bold">But, what is improv?</span>
               <div className="absolute w-full h-1 bg-accent bottom-0 left-0 transform -skew-x-12"></div>
-            </motion.div>
+            </motion.div> */}
 
             <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-bold text-primary mb-6 relative">
-              <span className="relative z-10">What is</span>
+              {/* <span className="relative z-10">What is</span> */}
               <span className="block relative">
-                <span className="relative z-10">Tadgola?</span>
+                <span className="relative z-10">But, what is improv?</span>
                 <span className="absolute -bottom-2 left-0 w-full h-4 bg-accent/30 -skew-x-3"></span>
               </span>
             </motion.h2>

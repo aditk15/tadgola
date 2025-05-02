@@ -24,7 +24,7 @@ export default function Footer() {
 
             <div className="flex space-x-4">
               <Link
-                href="https://instagram.com"
+                href="https://www.instagram.com/_tadgola"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors duration-300"
@@ -32,7 +32,7 @@ export default function Footer() {
                 <Instagram className="h-5 w-5" />
               </Link>
               <Link
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/tadgola/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors duration-300"
@@ -40,15 +40,7 @@ export default function Footer() {
                 <Linkedin className="h-5 w-5" />
               </Link>
               <Link
-                href="https://wa.me/1234567890"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors duration-300"
-              >
-                <MessageSquare className="h-5 w-5" />
-              </Link>
-              <Link
-                href="mailto:info@tadgola.com"
+                href="mailto:improv@tadgola.com"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors duration-300"
               >
                 <Mail className="h-5 w-5" />
@@ -66,7 +58,6 @@ export default function Footer() {
                 { href: "/about", label: "About Us" },
                 { href: "/faqs", label: "FAQs" },
                 { href: "/prompt-generator", label: "Prompt Generator" },
-                { href: "/blog", label: "Blog" },
                 { href: "/contact", label: "Contact" },
               ].map((link) => (
                 <Link key={link.href} href={link.href} className="hover:text-accent transition-colors relative group">
@@ -82,16 +73,28 @@ export default function Footer() {
                 <span className="absolute -bottom-2 left-0 w-full h-1 bg-accent"></span>
               </h3>
               <div className="space-y-3 text-white/80">
-                <Link href="tel:+1234567890" className="flex items-center gap-2 hover:text-accent transition-colors">
-                  <Phone className="h-4 w-4" />
-                  <span>+1 (234) 567-890</span>
-                </Link>
+              <Link 
+                href="https://wa.me/919082298083" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-accent transition-colors"
+              >
+                <div className="relative flex items-center justify-center">
+                  <img 
+                    src="/whatsapp.svg" 
+                    alt="WhatsApp"
+                    className="h-4 w-4"
+                    style={{ filter: 'brightness(0) invert(1)' }} // Makes it white to match footer text
+                  />
+                </div>
+                <span>+91 90822 98083</span>
+              </Link>
                 <Link
                   href="mailto:info@tadgola.com"
                   className="flex items-center gap-2 hover:text-accent transition-colors"
                 >
                   <Mail className="h-4 w-4" />
-                  <span>info@tadgola.com</span>
+                  <span>improv@tadgola.com</span>
                 </Link>
               </div>
             </div>
@@ -100,6 +103,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/20 text-center">
           <p className="text-white/70">© {new Date().getFullYear()} Tadgola. All rights reserved.</p>
+          <p className="text-white/50 text-sm mt-1">Designed and Developed by Adit Khandelwal</p>
         </div>
       </div>
     </footer>

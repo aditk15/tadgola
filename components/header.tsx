@@ -23,38 +23,60 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
+  const navLinks = [
+    { href: "/about", label: "About Us" },
+    { href: "/faqs", label: "FAQs" },
+    { href: "/prompt-generator", label: "Improv Prompt Generator" },
+    { href: "/contact", label: "Get in Touch" },
+  ]
+
   return (
     <header
-      className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
-        scrolled ? "bg-primary/95 backdrop-blur-md shadow-lg py-2" : "bg-primary py-4",
-      )}
-    >
-      <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center relative">
-          {/* Decorative elements */}
-          <div className="absolute -bottom-2 left-1/4 w-24 h-1 bg-accent rounded-full opacity-50 transform -rotate-3"></div>
-          <div className="absolute -top-2 right-1/3 w-16 h-1 bg-accent rounded-full opacity-50 transform rotate-6"></div>
+  className={cn(
+    "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
+    scrolled ? "bg-primary shadow-lg py-0" : "bg-primary py-0",
+  )}
+>
+  <div className="container mx-auto px-4">
+    <div className="flex justify-between items-center relative">
+      {/* Decorative elements */}
+      <div className="absolute -bottom-2 left-1/4 w-24 h-1 bg-accent rounded-full opacity-50 transform -rotate-3"></div>
+      <div className="absolute -top-2 right-1/3 w-16 h-1 bg-accent rounded-full opacity-50 transform rotate-6"></div>
 
-          <Link href="/" className="z-50 relative group">
-            <div className="absolute -inset-2 bg-accent/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <Image
-              src="/placeholder.svg?height=40&width=150"
-              alt="Tadgola logo"
-              width={150}
-              height={40}
-              className="h-10 w-auto relative"
-            />
-          </Link>
+      <Link href="/" className="z-50 relative group">
+  <div className="absolute -inset-2 bg-accent/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+  <Image
+    src="/logo.svg?height=1800&width=750" 
+    alt="Tadgola logo"
+    width={500}
+    height={180}
+    className="h-20 w-auto relative py-0" 
+  />
+</Link>
 
+          {/* Desktop Navigation - Only visible on lg screens and above */}
+          <nav className="hidden lg:flex items-center space-x-8">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-white font-medium hover:text-accent transition-all duration-300 relative group"
+              >
+                {link.label}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+            ))}
+          </nav>
+
+          {/* Mobile Menu Button - Only visible below lg screens */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="z-50 p-2 focus:outline-none relative group"
+            className="lg:hidden z-50 p-2 focus:outline-none relative group"
             aria-label="Toggle menu"
           >
             <div className="absolute inset-0 bg-accent/20 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
             {isMenuOpen ? (
-              <X className="h-6 w-6 text-white relative" />
+              <X className="h-6 w-6 text-accent relative" />
             ) : (
               <Menu className="h-6 w-6 text-white relative" />
             )}
@@ -62,22 +84,17 @@ export default function Header() {
         </div>
       </div>
 
+      {/* Mobile Sidebar - Only visible below lg screens */}
       <div
         className={cn(
-          "fixed top-0 right-0 h-full w-full md:w-1/3 bg-background shadow-lg transform transition-transform duration-500 ease-in-out z-40",
+          "lg:hidden fixed top-0 right-0 h-full w-full md:w-1/3 bg-background shadow-lg transform transition-transform duration-500 ease-in-out z-40",
           isMenuOpen ? "translate-x-0" : "translate-x-full",
         )}
       >
         <div className="absolute inset-0 bg-dots opacity-10"></div>
         <div className="flex flex-col h-full pt-24 px-8 relative">
           <nav className="space-y-6">
-            {[
-              { href: "/about", label: "About Us" },
-              { href: "/faqs", label: "FAQs" },
-              { href: "/prompt-generator", label: "Improv Prompt Generator" },
-              { href: "/blog", label: "Blog" },
-              { href: "/contact", label: "Get in Touch" },
-            ].map((item, index) => (
+            {navLinks.map((item, index) => (
               <Link
                 key={item.href}
                 href={item.href}
