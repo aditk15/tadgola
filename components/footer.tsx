@@ -57,7 +57,7 @@ export default function Footer() {
             <div className="grid grid-cols-2 gap-4">
               {[
                 { href: "/about", label: "About Us" },
-                { href: "/blog", label: "Blog" },
+                { href: "/", label: "Blog" },
                 { href: "/faqs", label: "FAQs" },
                 { href: "/prompt-generator", label: "Prompt Generator" },
                 { href: "/contact", label: "Contact" },

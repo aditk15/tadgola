@@ -25,7 +25,7 @@ export default function Header() {
 
   const navLinks = [
     { href: "/about", label: "About Us" },
-    { href: "/blog", label: "Blog" },
+    { href: "/", label: "Blog" },
     { href: "/faqs", label: "FAQs" },
     { href: "/prompt-generator", label: "Improv Prompt Generator" },
     { href: "/contact", label: "Get in Touch" },
@@ -110,7 +110,14 @@ export default function Header() {
 
           <div className="mt-auto mb-8">
             <div className="artistic-divider"></div>
-            <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Tadgola. All rights reserved.</p>
+            <p className="text-xs text-muted-foreground">© 2025 Tadgola. All rights reserved.</p>
+            <p className="text-xs text-muted-foreground">
+              Tadgola is a registered trademark and the exclusive property of FullHouse Ventures.
+            </p>
+            <p className="text-xs text-muted-foreground">
+              FullHouse Ventures is a registered partnership firm under the Indian Partnership Act, 1932.
+            </p>
+            <p className="text-xs text-muted-foreground mt-4">Designed and Developed by Adit Khandelwal</p>
           </div>
 
           {/* Decorative elements */}
