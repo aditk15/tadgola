@@ -107,8 +107,7 @@ export default function LandingSection() {
 
             <motion.p variants={itemVariants} className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-4">
               <span className="text-primary font-medium">IMPROV IS SHORT FOR IMPROVISATION</span> — which simply means
-              <span className="relative inline-block mx-1">
-                coming up with things on the spot.
+              <span className="relative inline-block mx-1">coming up with things on the spot.
                 <svg
                   className="absolute -bottom-1 left-0 w-full"
                   height="6"
@@ -122,7 +121,7 @@ export default function LandingSection() {
 
             <motion.p variants={itemVariants} className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-6">
               So, want to try something new?{" "}
-              <span className="text-accent font-bold">Improv is the best new thing to try</span>
+              <span className="text-accent font-bold">Improv is the best new thing to try.</span>
             </motion.p>
 
             <motion.div variants={itemVariants} className="mb-8">

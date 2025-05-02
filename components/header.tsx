@@ -46,13 +46,19 @@ export default function Header() {
 
           <Link href="/" className="z-50 relative group">
             <div className="absolute -inset-2 bg-accent/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <Image
-              src="/logo.svg?height=1800&width=750"
-              alt="Tadgola logo"
-              width={500}
-              height={180}
-              className="h-20 w-auto relative py-0"
-            />
+            <div key={isMenuOpen ? "open" : "closed"}>
+              <Image
+                src={isMenuOpen ? "/logo-alt.svg" : "/logo.svg"}
+                alt="Tadgola logo"
+                width={500}
+                height={180}
+                className={cn(
+                  "h-20 w-auto relative py-0",
+                  isMenuOpen ? "filter hue-rotate-30" : ""
+                )}
+                priority
+              />
+            </div>
           </Link>
 
           {/* Desktop Navigation - Only visible on lg screens and above */}
