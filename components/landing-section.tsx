@@ -86,8 +86,7 @@ export default function LandingSection() {
       {/* Decorative elements */}
       <div className="circle-decoration w-64 h-64 -top-20 -left-20 opacity-30"></div>
       <div className="circle-decoration w-96 h-96 -bottom-40 -right-40 opacity-20"></div>
-      <div className="squiggle top-1/4 left-1/4 transform -rotate-12"></div>
-      <div className="squiggle bottom-1/4 right-1/4 transform rotate-12"></div>
+    
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -108,14 +107,6 @@ export default function LandingSection() {
             <motion.p variants={itemVariants} className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-4">
               <span className="text-primary font-medium">IMPROV IS SHORT FOR IMPROVISATION</span> — which simply means
               <span className="relative inline-block mx-1">coming up with things on the spot.
-                <svg
-                  className="absolute -bottom-1 left-0 w-full"
-                  height="6"
-                  viewBox="0 0 100 6"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M0,3 C20,1 40,6 60,3 C80,0 100,4 100,3" stroke="#F2B10F" strokeWidth="3" fill="none" />
-                </svg>
               </span>
             </motion.p>
 

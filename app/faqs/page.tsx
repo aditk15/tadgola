@@ -29,7 +29,7 @@ function FaqItem({ question, answer }: FaqItemProps) {
         />
       </button>
       <div className={cn("overflow-hidden transition-all duration-300", isOpen ? "max-h-96 pb-4" : "max-h-0")}>
-        <p className="text-foreground/80 italic">
+        <p className="text-foreground/80 font-normal">
           {answer}
         </p>
       </div>

@@ -40,9 +40,6 @@ export default function Header() {
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center relative">
-          {/* Decorative elements */}
-          <div className="absolute -bottom-2 left-1/4 w-24 h-1 bg-accent rounded-full opacity-50 transform -rotate-3"></div>
-          <div className="absolute -top-2 right-1/3 w-16 h-1 bg-accent rounded-full opacity-50 transform rotate-6"></div>
 
           <Link href="/" className="z-50 relative group">
             <div className="absolute -inset-2 bg-accent/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

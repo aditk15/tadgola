@@ -60,7 +60,7 @@ export default function ReviewsSection() {
     {
       content:
         "It was amazing! I didn’t expect my first session to go so well. Attending this Tadgola improv session immediately lifted my mood and set me in such a good space for the week ahead. It was just so much fun! “Bohot achha tha, bohot achha tha, bohot achha tha!”",
-      author: "Lipika Saha & Friend",
+      author: "Lipika & Pushpa",
       image: "/reviews/4.png",
       bgColor: "bg-[#fff9e6]", 
     },

@@ -1,5 +1,6 @@
 import Header from "@/components/header"
 import LandingSection from "@/components/landing-section"
+import UpcomingShows from "@/components/upcoming-shows"
 import WhatWeDo from "@/components/what-we-do"
 import Milestones from "@/components/milestones"
 import ReviewsSection from "@/components/reviews-section"
@@ -10,6 +11,7 @@ export default function Home() {
     <main className="min-h-screen overflow-hidden">
       <Header />
       <LandingSection />
+      <UpcomingShows />
       <WhatWeDo />
       <Milestones />
       <ReviewsSection />
