@@ -11,6 +11,7 @@ interface BlogPostProps {
   readTime: string
   slug: string
   image: string
+  thumbnail?: string
 }
 
 function BlogPostCard({ title, excerpt, date, readTime, slug, image }: BlogPostProps) {

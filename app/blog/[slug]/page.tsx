@@ -13,6 +13,7 @@ const blogPosts = [
     date: "May 10, 2025",
     readTime: "3 min read",
     image: "/blog/monday-comedy.MP4",
+    thumbnail: "/blog/monday-comedy.jpg",
     content: [
       {
         type: "paragraph",
@@ -42,6 +43,7 @@ const blogPosts = [
     date: "April 25, 2025",
     readTime: "4 min read",
     image: "/blog/tadgola-refreshing2.jpg",
+    thumbnail: "/blog/tadgola-refreshing.jpg",
     content: [
       {
         type: "paragraph",
@@ -79,6 +81,7 @@ const blogPosts = [
     date: "April 15, 2025",
     readTime: "3 min read",
     image: "/blog/improv-for-everyone.jpg",
+    thumbnail: "/blog/improv-for-everyone.jpg",
     content: [
       {
         type: "paragraph",
@@ -157,10 +160,8 @@ function renderContent(content: any[]) {
 export default async function BlogPostPage(props: { params: { slug: string } }) {
   const { slug } = await props.params
 
-  // Find the blog post with the matching slug
   const post = blogPosts.find((post) => post.slug === slug)
 
-  // If no matching post is found, return 404
   if (!post) {
     notFound()
   }
@@ -174,7 +175,6 @@ export default async function BlogPostPage(props: { params: { slug: string } }) 
       <article className="pt-32 pb-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            {/* Back to blog link */}
             <Link
               href="/blog"
               className="inline-flex items-center text-primary hover:text-primary/80 mb-8 transition-colors"
@@ -183,7 +183,6 @@ export default async function BlogPostPage(props: { params: { slug: string } }) 
               <span>Back to all posts</span>
             </Link>
 
-            {/* Post header */}
             <div className="mb-8">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6">{post.title}</h1>
 
@@ -241,7 +240,7 @@ export default async function BlogPostPage(props: { params: { slug: string } }) 
                     <div className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                       <div className="relative h-40 w-full">
                         <Image
-                          src={relatedPost.image || "/placeholder.svg?height=300&width=500"}
+                          src={relatedPost.thumbnail || "/placeholder.svg?height=300&width=500"}
                           alt={relatedPost.title}
                           fill
                           className="object-cover transition-transform duration-500 group-hover:scale-105"
