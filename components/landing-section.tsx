@@ -86,13 +86,12 @@ export default function LandingSection() {
       {/* Decorative elements */}
       <div className="circle-decoration w-64 h-64 -top-20 -left-20 opacity-30"></div>
       <div className="circle-decoration w-96 h-96 -bottom-40 -right-40 opacity-20"></div>
-    
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left side: What is Tadgola? */}
+          {/* Left side: What is Tadgola? - Order changed for mobile */}
           <motion.div
-            className="order-2 lg:order-1"
+            className="order-1 lg:order-1"
             initial="hidden"
             animate={isVisible ? "visible" : "hidden"}
             variants={containerVariants}
@@ -106,8 +105,7 @@ export default function LandingSection() {
 
             <motion.p variants={itemVariants} className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-4">
               <span className="text-primary font-medium">IMPROV IS SHORT FOR IMPROVISATION</span> — which simply means
-              <span className="relative inline-block mx-1">coming up with things on the spot.
-              </span>
+              <span className="relative inline-block mx-1">coming up with things on the spot.</span>
             </motion.p>
 
             <motion.p variants={itemVariants} className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-6">
@@ -135,7 +133,7 @@ export default function LandingSection() {
               </ul>
             </motion.div>
 
-            <motion.div variants={itemVariants} className="mt-8">
+            <motion.div variants={itemVariants} className="mt-8 flex justify-center lg:justify-start">
               <a
                 href="#what-we-do"
                 className="btn-artistic inline-block px-8 py-3 bg-primary text-white font-bold rounded-full hover:shadow-lg transition-shadow duration-300"
@@ -145,8 +143,8 @@ export default function LandingSection() {
             </motion.div>
           </motion.div>
 
-          {/* Right side: Image Carousel */}
-          <div className="order-1 lg:order-2 relative">
+          {/* Right side: Image Carousel - Order changed for mobile */}
+          <div className="order-2 lg:order-2 relative">
             <div className="absolute inset-0 blob bg-accent/10 transform scale-110"></div>
             <div className="grid grid-cols-2 gap-4 h-[500px] relative z-10">
               <div className="overflow-hidden h-full rounded-2xl shadow-xl transform rotate-2">

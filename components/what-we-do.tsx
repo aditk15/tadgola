@@ -22,7 +22,7 @@ function ActivityCard({ description, icon, bgColor = "bg-accent", delay = 0 }: A
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{ duration: 0.6, delay: delay * 0.2 }}
-      className="card-hover-effect rounded-2xl shadow-lg aspect-square overflow-hidden"
+      className="card-hover-effect rounded-2xl shadow-lg overflow-hidden"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -36,12 +36,11 @@ function ActivityCard({ description, icon, bgColor = "bg-accent", delay = 0 }: A
         >
           {icon}
         </span>
-        {/* Decorative elements */}
         <div className="absolute top-4 left-4 w-8 h-8 rounded-full bg-white/10"></div>
         <div className="absolute bottom-4 right-4 w-6 h-6 rounded-full bg-white/10"></div>
       </div>
       <div className="card-content p-6 text-white">
-      <p className="font-sans text-white/90 leading-relaxed text-sm md:text-base">{description}</p>
+        <p className="font-sans text-white/90 leading-relaxed text-sm md:text-base">{description}</p>
       </div>
     </motion.div>
   )
@@ -50,35 +49,41 @@ function ActivityCard({ description, icon, bgColor = "bg-accent", delay = 0 }: A
 export default function WhatWeDo() {
   const activities = [
     {
-      description: "Fun, high-energy sessions with classic and new improv games. Laugh, let loose, and meet fellow improv lovers. Perfect for beginners and pros alike.",
+      description:
+        "Fun, high-energy sessions with classic and new improv games. Laugh, let loose, and meet fellow improv lovers. Perfect for beginners and pros alike.",
       icon: "Improv JAMs",
       bgColor: "bg-gradient-to-br from-primary to-primary/80",
     },
     {
-      description: "Break the routine with our fun, interactive corporate improv sessions. Boost team bonding, communication, and laughter — no scripts, just pure connection.",
+      description:
+        "Break the routine with our fun, interactive corporate improv sessions. Boost team bonding, communication, and laughter — no scripts, just pure connection.",
       icon: "Corporate Shows",
       bgColor: "bg-gradient-to-br from-accent to-accent/80",
     },
     {
-      description: "Sharpen your instincts with our dynamic improv training for actors. Build on-set spontaneity, stage presence, and emotional range through play and performance.",
+      description:
+        "Sharpen your instincts with our dynamic improv training for actors. Build on-set spontaneity, stage presence, and emotional range through play and performance.",
       icon: "Actor Training",
       bgColor: "bg-gradient-to-br from-primary/90 to-accent/80",
     },
     {
-      description: "Enhance team communication, collaboration, and problem-solving through our improv-based corporate workshops. Designed for professionals, these interactive sessions improve adaptability, active listening, and creative thinking in the workplace.",
+      description:
+        "Enhance team communication, collaboration, and problem-solving through our improv-based corporate workshops. Designed for professionals, these interactive sessions improve adaptability, active listening, and creative thinking in the workplace.",
       icon: "Corporate Training",
       bgColor: "bg-gradient-to-br from-accent/90 to-primary/80",
     },
     {
-      description: "Liven up your event with our interactive improv performances. Perfect for birthdays, reunions, and private parties — spontaneous humor, audience engagement, and unforgettable memories.",
+      description:
+        "Liven up your event with our interactive improv performances. Perfect for birthdays, reunions, and private parties — spontaneous humor, audience engagement, and unforgettable memories.",
       icon: "Party Gigs",
       bgColor: "bg-gradient-to-br from-accent/90 to-primary/80",
     },
     {
-      description: "Enhance creativity, teamwork, and communication with our improv workshops for schools and summer camps. Designed to build confidence and foster collaboration through engaging, interactive activities for youth.",
+      description:
+        "Enhance creativity, teamwork, and communication with our improv workshops for schools and summer camps. Designed to build confidence and foster collaboration through engaging, interactive activities for youth.",
       icon: "Workshops for Schools & Camps",
       bgColor: "bg-gradient-to-br from-accent/90 to-primary/80",
-    }
+    },
   ]
 
   const sectionRef = useRef(null)
@@ -89,7 +94,7 @@ export default function WhatWeDo() {
       <div className="absolute inset-0 bg-muted"></div>
 
       <div className="absolute top-1/4 left-10 w-20 h-20 rounded-full bg-primary/10 blob-small"></div>
-      <div className="absolute bottom-1/3 right-10 w-32 h-32 rounded-full bg-accent/10 blob"></div>
+      {/* Removed the problematic yellow circle */}
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
