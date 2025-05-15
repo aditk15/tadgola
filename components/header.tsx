@@ -25,7 +25,7 @@ export default function Header() {
 
   const navLinks = [
     { href: "/about", label: "About Us" },
-    { href: "/", label: "Blog" },
+    { href: "/blog", label: "Blog" },
     { href: "/faqs", label: "FAQs" },
     { href: "/prompt-generator", label: "Improv Prompt Generator" },
     { href: "/contact", label: "Get in Touch" },

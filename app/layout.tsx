@@ -3,18 +3,19 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import PromptPopup from "@/components/prompt-popup"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Tadgola - Improv Company",
   description: "Tadgola is an improv company dedicated to bringing the joy of improvisation to everyone.",
-  generator: 'Adit Khandelwal',
+  generator: "Adit Khandelwal",
   icons: {
-    icon: '/48.ico',
-    shortcut: '/48.ico',
-    apple: '/48.ico',
-  }
+    icon: "/48.ico",
+    shortcut: "/48.ico",
+    apple: "/48.ico",
+  },
 }
 
 export default function RootLayout({
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
+          <PromptPopup />
         </ThemeProvider>
       </body>
     </html>
