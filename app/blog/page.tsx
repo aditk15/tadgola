@@ -9,12 +9,11 @@ interface BlogPostProps {
   excerpt: string
   date: string
   readTime: string
-  author: string
   slug: string
   image: string
 }
 
-function BlogPostCard({ title, excerpt, date, readTime, author, slug, image }: BlogPostProps) {
+function BlogPostCard({ title, excerpt, date, readTime, slug, image }: BlogPostProps) {
   return (
     <article className="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
       <Link href={`/blog/${slug}`} className="block">
@@ -42,13 +41,6 @@ function BlogPostCard({ title, excerpt, date, readTime, author, slug, image }: B
         <Link href={`/blog/${slug}`}>
           <h2 className="text-2xl font-bold mb-2 hover:text-primary transition-colors">{title}</h2>
         </Link>
-
-        <p className="text-foreground/80 mb-4">{excerpt}</p>
-
-        <div className="flex items-center">
-          <User className="h-4 w-4 text-primary mr-2" />
-          <span className="text-sm font-medium">{author}</span>
-        </div>
       </div>
     </article>
   )
@@ -61,9 +53,8 @@ export default function BlogPage() {
       title: "🌀 Don't Let Monday Win — Fight Back with Comedy 🎭",
       excerpt:
         "Back-to-back meetings. Overflowing inbox. Coffee that stopped working at 3 PM. Sound familiar? It's time for a reset — and we're offering one you won't find in your Google Calendar.",
-      date: "May 10, 2025",
+      date: "May 15, 2025",
       readTime: "3 min read",
-      author: "Malay",
       slug: "monday-comedy-night",
       image: "/blog/monday-comedy.jpg",
     },
@@ -73,7 +64,6 @@ export default function BlogPage() {
         "Yes, it's hot. But somehow, when you're laughing, playing, and vibing with strangers-turned-friends, you forget all about the heat. Tadgola is Mumbai's most refreshing new ritual.",
       date: "April 25, 2025",
       readTime: "4 min read",
-      author: "Krish",
       slug: "tadgola-refreshing-ritual",
       image: "/blog/tadgola-refreshing.jpg",
     },
@@ -83,7 +73,6 @@ export default function BlogPage() {
         "When most people hear the word improv, they picture actors on stage, tossing out quick-witted one-liners. But improv isn't just a performance skill—it's a powerful tool anyone can use.",
       date: "April 15, 2025",
       readTime: "3 min read",
-      author: "Malay",
       slug: "improv-not-just-for-actors",
       image: "/blog/improv-for-everyone.jpg",
     },
