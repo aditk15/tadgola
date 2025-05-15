@@ -171,7 +171,7 @@ export default function UpcomingShows() {
   }
 
   return (
-    <section ref={sectionRef} className="py-24 relative overflow-hidden">
+    <section ref={sectionRef} className="py-10 relative overflow-hidden">
       <div className="absolute inset-0 bg-primary"></div>
 
       {/* Removed the problematic yellow circle */}

@@ -82,7 +82,7 @@ export default function LandingSection() {
   }
 
   return (
-    <section className="pt-24 min-h-screen flex items-center relative overflow-hidden">
+    <section className="pt-24 pb-5 min-h-screen flex items-center relative overflow-hidden">
       {/* Decorative elements */}
       <div className="circle-decoration w-64 h-64 -top-20 -left-20 opacity-30"></div>
       <div className="circle-decoration w-96 h-96 -bottom-40 -right-40 opacity-20"></div>
@@ -147,7 +147,7 @@ export default function LandingSection() {
           <div className="order-2 lg:order-2 relative">
             <div className="absolute inset-0 blob bg-accent/10 transform scale-110"></div>
             <div className="grid grid-cols-2 gap-4 h-[500px] relative z-10">
-              <div className="overflow-hidden h-full rounded-2xl shadow-xl transform rotate-2">
+              <div className="overflow-hidden h-full rounded-2xl shadow-xl transform rotate-1">
                 <div ref={column1Ref} className="vertical-scroll">
                   {images1.map((src, index) => (
                     <div key={`col1-${index}`} className="mb-4">

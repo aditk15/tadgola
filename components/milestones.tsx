@@ -76,7 +76,7 @@ export default function Milestones() {
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" })
 
   return (
-    <section className="py-24 relative overflow-hidden" ref={sectionRef}>
+    <section className="py-16 relative overflow-hidden" ref={sectionRef}>
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-muted to-transparent"></div>
       <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-muted to-transparent"></div>
