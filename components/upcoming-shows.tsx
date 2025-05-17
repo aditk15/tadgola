@@ -109,7 +109,7 @@ export default function UpcomingShows() {
       venue: "antiSOCIAL",
       time: "8pm onwards",
       location: "Lower Parel",
-      link: "https://in.bookmyshow.com/events/tadgola/ET00439465",
+      link: "https://www.district.in/events/tadgola-improv-jam-at-antisocial-may19-2025-buy-tickets",
     },
     {
       date: "23.05.2025",
@@ -133,7 +133,7 @@ export default function UpcomingShows() {
       venue: "antiSOCIAL",
       time: "8pm onwards",
       location: "Lower Parel",
-      link: "https://insider.in/tadgola-may26-2025/event",
+      link: "https://www.district.in/events/tadgola-improv-jam-at-antisocial-may19-2025-buy-tickets",
     },
     {
       date: "01.06.2025",
