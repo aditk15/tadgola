@@ -108,7 +108,10 @@ export default function PromptGeneratorPage() {
               <p>Use these prompts for practice, warm-ups, or performances!</p>
               <p className="mt-2">
                 Have a great prompt idea?{" "}
-                <a href="/contact" className="text-primary hover:underline">
+                <a href="https://wa.me/919082298083?text=Hey!%20I%20have%20this%20cool%20prompt%20idea%20which%20can%20be%20used%20in%20your%20JAMs%3A%20"
+    className="text-primary hover:underline cursor-pointer"
+    target="_blank"
+    rel="noopener noreferrer">
                   Share it with us
                 </a>
                 !

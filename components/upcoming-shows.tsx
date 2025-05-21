@@ -162,7 +162,7 @@ export default function UpcomingShows() {
 
   // For testing purposes - this will mark the first show as completed
   // In production, this would use the actual current date
-  const isTestMode = true
+  const isTestMode = false
   const getIsPast = (showDateStr: string, index: number) => {
     if (isTestMode) {
       return index === 0 // Only mark the first show as completed for testing
