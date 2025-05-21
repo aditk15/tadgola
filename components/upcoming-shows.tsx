@@ -128,12 +128,12 @@ export default function UpcomingShows() {
       link: "https://in.bookmyshow.com/plays/tadgola-an-improv-fundraiser-for-cat-cafe-studio/ET00446070?webview=true",
     },
     {
-      date: "26.05.2025",
+      date: "27.05.2025",
       day: "Monday",
       venue: "antiSOCIAL",
       time: "8pm onwards",
       location: "Lower Parel",
-      link: "https://www.district.in/events/tadgola-improv-jam-at-antisocial-may19-2025-buy-tickets",
+      link: "https://www.district.in/events/tadgola-improv-game-nights-at-antisocial-may27-2025-buy-tickets",
     },
     {
       date: "01.06.2025",

@@ -42,6 +42,16 @@ export default function PromptGeneratorPage() {
     "You are in car being kidnapped",
     "You have come to wrong funeral",
     "Convincing an influencer to post about your brand",
+    "A drunk man entering a ward where a woman is giving birth",
+    "You went to the wrong funeral by mistake",
+    "A bunch of cows discussing milk production in their quarterly dairy meeting",
+    "I was locked in my bedroom for 4 hours today",
+    "Maids catch each other stealing money from the houses they work",
+    "HR catches you stealing office stationery",
+    "You lied to your friend and he knows",
+    "You are having an ice cream for the first time in 20 years",
+    "You just discovered fire",
+    "You're hiding a broken pot and mom catches you",
   ]
 
   const generatePrompt = () => {
