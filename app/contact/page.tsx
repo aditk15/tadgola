@@ -26,7 +26,6 @@ export default function ContactPage() {
             </div>
 
             <div className="grid grid-cols-1 gap-12">
-              {/* Contact Links Section - Enhanced and Full-Screen */}
               <div className="bg-white rounded-2xl shadow-xl overflow-hidden relative">
                 <div className="absolute inset-0 bg-dots opacity-10"></div>
                 <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2 blob"></div>
