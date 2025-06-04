@@ -12,10 +12,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
-              {/* <span className="inline-block text-sm uppercase tracking-widest text-primary font-bold mb-2 relative">
-                Reach Out
-                <div className="absolute w-full h-1 bg-primary/30 bottom-0 left-0 transform -skew-x-12"></div>
-              </span> */}
+              
 
               <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl text-primary mb-6 relative inline-block">
                 <span className="relative z-10">Get in Touch</span>
