@@ -96,10 +96,26 @@ export default function UpcomingShows() {
 
   const shows = [
     {
-      date: "10.06.2025",
+      date: "3.06.2025",
       day: "Tuesday",
       venue: "Khar SOCIAL",
       time: "8pm onwards",
+      location: "Khar",
+      link: "https://www.district.in/events/tadgola-improv-game-nights-at-khar-social-jun3-2025/buy-page/shows",
+    },
+    {
+      date: "06.06.2025",
+      day: "Friday",
+      venue: "3 Art House",
+      time: "6pm onwards",
+      location: "Khar",
+      link: "https://arthouse.myflodesk.com/pc23p5don2",
+    },
+    {
+      date: "10.06.2025",
+      day: "Tuesday",
+      venue: "Khar SOCIAL",
+      time: "8:00pm onwards",
       location: "Khar",
       link: "https://www.district.in/events/tadgola-improv-game-nights-at-khar-social-jun3-2025/buy-page/shows",
     },
@@ -115,34 +131,18 @@ export default function UpcomingShows() {
       date: "20.06.2025",
       day: "Friday",
       venue: "3 Art House",
-      time: "6:30pm onwards",
+      time: "6:30 pm onwards",
       location: "Khar",
       link: "https://arthouse.myflodesk.com/pc23p5don2",
     },
     {
-      date: "27.06.2025",
+      date: "24.06.2025",
       day: "Tuesday",
       venue: "Khar SOCIAL",
-      time: "8pm onwards",
+      time: "8pm",
       location: "Khar",
       link: "https://www.district.in/events/tadgola-improv-game-nights-at-khar-social-jun3-2025/buy-page/shows",
     },
-    // {
-    //   date: "27.05.2025",
-    //   day: "Monday",
-    //   venue: "antiSOCIAL",
-    //   time: "8pm onwards",
-    //   location: "Lower Parel",
-    //   link: "https://www.district.in/events/tadgola-improv-game-nights-at-antisocial-may27-2025-buy-tickets",
-    // },
-    // {
-    //   date: "01.06.2025",
-    //   day: "Sunday",
-    //   venue: "Chaubara - by Veda Factory",
-    //   time: "11am onwards",
-    //   location: "Versova",
-    //   link: "https://in.bookmyshow.com/events/tadgola/ET00439465",
-    // },
   ]
 
   // Function to check if a show date is in the past
