@@ -136,7 +136,7 @@ export default function UpcomingShows() {
       link: "https://arthouse.myflodesk.com/pc23p5don2",
     },
     {
-      date: "21.07.2025",
+      date: "22.07.2025",
       day: "Tuesday",
       venue: "Khar SOCIAL",
       time: "9:00pm",
@@ -144,7 +144,15 @@ export default function UpcomingShows() {
       link: "https://www.district.in/events/tadgola-improv-game-nights-at-khar-social-jun24-2025-buy-tickets",
     },
     {
-      date: "28.07.2025",
+      date: "27.07.2025",
+      day: "Sunday",
+      venue: "Raasta, Bombay",
+      time: "6:30pm",
+      location: "Khar",
+      link: "",
+    },
+    {
+      date: "29.07.2025",
       day: "Tuesday",
       venue: "Khar SOCIAL",
       time: "9:00pm",
