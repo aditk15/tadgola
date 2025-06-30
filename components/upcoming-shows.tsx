@@ -100,7 +100,7 @@ export default function UpcomingShows() {
       day: "Tuesday",
       venue: "Khar SOCIAL",
       time: "9:00pm onwards",
-      location: "Khar",
+      location: "Improv JAM",
       link: "https://www.district.in/events/tadgola-improv-game-nights-at-khar-social-jun24-2025-buy-tickets",
     },
     {
@@ -108,7 +108,7 @@ export default function UpcomingShows() {
       day: "Friday",
       venue: "3 Art House",
       time: "6:30pm onwards",
-      location: "Khar",
+      location: "Improv JAM",
       link: "https://arthouse.myflodesk.com/jmgg4dc6xf",
     },
     {
@@ -116,7 +116,7 @@ export default function UpcomingShows() {
       day: "Tuesday",
       venue: "Khar SOCIAL",
       time: "9:00pm onwards",
-      location: "Khar",
+      location: "Improv JAM",
       link: "https://www.district.in/events/tadgola-improv-game-nights-at-khar-social-jun24-2025-buy-tickets",
     },
     {
@@ -124,7 +124,7 @@ export default function UpcomingShows() {
       day: "Tuesday",
       venue: "Khar SOCIAL",
       time: "9:00pm onwards",
-      location: "Khar",
+      location: "Improv JAM",
       link: "https://www.district.in/events/tadgola-improv-game-nights-at-khar-social-jun24-2025-buy-tickets",
     },
     {
@@ -132,7 +132,7 @@ export default function UpcomingShows() {
       day: "Friday",
       venue: "3 Art House",
       time: "6:00pm onwards",
-      location: "Khar",
+      location: "Improv Battle",
       link: "https://arthouse.myflodesk.com/pc23p5don2",
     },
     {
@@ -140,7 +140,7 @@ export default function UpcomingShows() {
       day: "Tuesday",
       venue: "Khar SOCIAL",
       time: "9:00pm",
-      location: "Khar",
+      location: "Improv JAM",
       link: "https://www.district.in/events/tadgola-improv-game-nights-at-khar-social-jun24-2025-buy-tickets",
     },
     {
@@ -148,7 +148,7 @@ export default function UpcomingShows() {
       day: "Sunday",
       venue: "Raasta, Bombay",
       time: "6:30pm",
-      location: "Khar",
+      location: "Improv Show",
       link: "",
     },
     {
@@ -156,7 +156,7 @@ export default function UpcomingShows() {
       day: "Tuesday",
       venue: "Khar SOCIAL",
       time: "9:00pm",
-      location: "Khar",
+      location: "Improv JAM",
       link: "https://www.district.in/events/tadgola-improv-game-nights-at-khar-social-jun24-2025-buy-tickets",
     },
   ]
