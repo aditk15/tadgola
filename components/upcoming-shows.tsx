@@ -109,7 +109,7 @@ export default function UpcomingShows() {
       venue: "3 Art House",
       time: "6:30pm onwards",
       location: "Khar",
-      link: "https://arthouse.myflodesk.com/pc23p5don2",
+      link: "https://arthouse.myflodesk.com/jmgg4dc6xf",
     },
     {
       date: "08.07.2025",
