@@ -67,9 +67,9 @@ function Counter({ end, label, duration = 2000, suffix = "", delay = 0 }: Counte
 
 export default function Milestones() {
   const milestones = [
-    { value: 30, label: "Shows Conducted", suffix: "+", delay: 0 },
-    { value: 3, label: "Cities Ventured", suffix: "", delay: 1 },
-    { value: 500, label: "Happy Participants", suffix: "+", delay: 2 },
+    { value: 60, label: "Shows Conducted", suffix: "+", delay: 0 },
+    { value: 6, label: "Cities Ventured", suffix: "", delay: 1 },
+    { value: 1000, label: "Happy Participants", suffix: "+", delay: 2 },
   ]
 
   const sectionRef = useRef(null)
