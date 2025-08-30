@@ -103,7 +103,6 @@ export default function UpcomingShows() {
       location: "Improv JAM",
       link: "https://arthouse.myflodesk.com/jmgg4dc6xf",
     },
-    },
     {
       date: "12.08.2025",
       day: "Tuesday",
